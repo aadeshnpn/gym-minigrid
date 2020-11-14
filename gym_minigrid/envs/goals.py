@@ -16,6 +16,7 @@ class Goals(RoomGrid):
             num_cols=2,
             room_size=room_size,
             max_steps=8*room_size**2,
+            agent_view_size=3,
             seed=seed
         )
 
