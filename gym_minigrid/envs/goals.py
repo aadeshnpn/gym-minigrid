@@ -24,7 +24,7 @@ class Goals(RoomGrid):
         super()._gen_grid(width, height)
 
         # Make sure the two rooms are directly connected by a locked door
-        door, _ = self.add_door(0, 0, 0, locked=True, color='green')
+        door, _ = self.add_door(0, 0, 0, locked=True, color='blue')
         # Add a key to unlock the door
         self.add_object(0, 0, 'key', door.color)
         # self.add_object(1, 0, 'key', door.color)
@@ -35,14 +35,14 @@ class Goals(RoomGrid):
 
         # Add balls
         self.add_object(0, 0, 'ball', door.color)
-        self.add_object(1, 0, 'ball', door.color)
+        self.add_object(1, 0, 'ball', 'red')
         # self.add_object(0, 0, 'ball', 'red')
         # self.add_object(1, 0, 'ball', 'blue')
         # self.mission = "open the door"
 
         # Add boxes
         self.add_object(0, 0, 'box', door.color)
-        self.add_object(1, 0, 'box', door.color)
+        self.add_object(1, 0, 'box', 'red')
         # self.add_object(0, 0, 'box', 'red')
         # self.add_object(1, 0, 'box', 'blue')
 
